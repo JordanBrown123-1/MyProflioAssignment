@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>My Portfolio</h1>
+            <button class="hamburger" aria-label="Toggle menu">☰</button>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h2>Welcome to My Portfolio</h2>
+                <p>Hi, I'm Jordan Brown. I'm a software developer passionate about creating amazing digital experiences.</p>
+                <a href="#projects" class="btn">View My Work</a>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <img src="https://i.imgur.com/6SIANDj.jpeg" alt="Profile picture" class="profile-img" style="width:100px; height:auto;">
+                    <div class="about-text">
+                        <h3>Personal Background</h3>
+                        <p>I'm a NJIT student with 3 1/2 years of experience in coding and software developing. I have a passion for creating innovative and user-friendly applications. </p>
+                        <h3>Interests</h3>
+                        <p>When I'm not coding, I enjoy animating, reading and trading stocks. I'm passionate about my dreams and goals..</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2>My Projects</h2>
+                <div class="project-carousel">
+                    <div class="project-slide active">
+                        <img src="https://i.imgur.com/eO6crmT.png" alt="Project 1 screenshot" style="width:500px; height:500px;">
+                        <h3>Project 1</h3>
+                        <p>In this project, I used the statistics module to calculate the mean, median, mode, and standard deviation of a list. We also used the numpy and matplotlib modules to create a histogram and line chart. The median and mean are similiar, but the mode is different. The mode is the most frequent value in a list. The histogram has a variety of different frequences, and the line chart shows the scores.</p>
+                        <a href="Exam_Scaores_Analysis.py" class="btn">View Project Code</a>
+                    </div>
+                    <div class="project-slide">
+                        <img src="https://i.imgur.com/RW434i6.png" alt="Project 2 screenshot" style="width:500px; height:500px;">
+                        <h3>Project 2</h3>
+                        <p>This project is a daily step tracker and it will calculate the average steps taken each day. It will also calculate the percentage of days that at least 10,000 steps were taken. It will also compare average steps on weekdays versus weekends. It will also create a line chart and highlight days that at least 10,000 steps were taken.</p>
+                        <a href="Daily_Steps_tracker.py" class="btn">View Project Code</a>
+                    </div>
+                    <div class="project-slide">
+                        <img src="https://i.imgur.com/rZwDN0g.png" alt="Project 3 screenshot" style="width:500px; height:500px;">
+                        <h3>Project 3</h3>
+                        <p>This project is a weather trends analysis and it will calculate the min, max, mean, and standard deviation of the temperatures. It will also identify any anomalies in the temperatures with their temperature. It will also create a line chart.</p>
+                        <a href="Weather_Trends_Analysis.py" class="btn">View Project Code</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2>My Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Frontend</h3>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                            <li>React</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Backend</h3>
+                        <ul>
+                            <li>Node.js</li>
+                            <li>Python</li>
+                            <li>SQL</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Tools</h3>
+                        <ul>
+                            <li>Git</li>
+                            <li>VS Code</li>
+                            <li>Figma</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+                <div id="form-success" class="hidden">
+                    <p>Thank you for your message! I'll get back to you soon.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="GitHub">GitHub</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

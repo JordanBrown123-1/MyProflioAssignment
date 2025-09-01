@@ -5,7 +5,7 @@ Welcome to my personal portfolio website, showcasing my projects and skills in I
 ## 🌐 Live Website
 
 Explore the live version of my portfolio here:  
-👉 [https://jordanbrown123-1.github.io/JordanBrown123/](https://jordanbrown123-1.github.io/JordanBrown123/)
+👉 [https://jordanbrown123-1.github.io/JordanBrown123/](https://web.njit.edu/~jb826/SDET101Assignment4/)
 
 ## 📁 Project Description
 
